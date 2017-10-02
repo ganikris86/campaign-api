@@ -1,11 +1,14 @@
 # XLS CAMPAIGN API - NodeJS project
 
 This is a set of RESTful APIs built in Node.js to create and maintain the campaigns.
-Services offerred are,
-POST - Create a campaign
-GET - Get all campaigns
-GET - Get a campaign by id
-DELETE - Delete a campaign
+
+### Services offerred,
+POST - Create a campaign<br>
+GET - Get all campaigns<br>
+GET - Get a campaign by id<br>
+DELETE - Delete a campaign<br>
+POST - Compute campaign statistics<br>
+POST - Compute merchant statistics<br>
 
 
 ### Pre-requisite
