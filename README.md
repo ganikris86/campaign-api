@@ -31,8 +31,7 @@ POST - Compute merchant statistics<br>
 	11.	Execute : export OCI_INC_DIR=/data/oracle/instantclient/sdk/include
 
 
-
-### As follows the steps to checkout the project, and run it,
+### Steps to checkout the project and run,
 
 1. To get the xls_campaign_api project to your machine, Git clone <git_project_repository> <br>
 2. To download npm modules, run command "npm install" from the src directory of xls_campaign_api <br>
