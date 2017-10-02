@@ -1,0 +1,323 @@
+{
+    "validAcceptHeaderRequest": {
+        "uri": "/v1/campaigns",
+        "method": "GET",
+        "headers": {
+            "Accept": "application/json",
+            "Content-Type": "application/json",
+            "Authorization": "Basic T0NUZXN0aW5nOlByb3RlY3QkMQ==",
+            "From": "XLS-CAMPAIGN-API"
+        },
+        "expected": {
+            "status": 200,
+            "body": {
+                "campaignId": 1,
+                "campaignDescription": {
+                    "name": "XLS Amount Campaign 1",
+                    "type": "Amount",
+                    "subtype": "Discount",
+                    "image": "http://101.127.220.153:8882/img/campaigns/cpgn_0006.png",
+                    "merchantCampaignType": {
+                        "type": "Mono Merchant",
+                        "hostAndVirtualTerminal": false
+                    },
+                    "ownerType": "Merchant",
+                    "ownerId": 1
+                },
+                "campaignValidity": {
+                    "startDate": "20170328",
+                    "endDate": "20170425"
+                },
+                "campaignPrerequisite": {
+                    "purchaseAmount": {
+                        "min": 1,
+                        "max": 1000
+                    },
+                    "awardFrequency": "Every Visit"
+                },
+                "campaignDefinition": {
+                    "rfm": {
+                        "counterConfiguration": "No Override",
+                        "counterReset": {
+                            "type": "Reset x day(s) after 1st transaction date",
+                            "days": 10,
+                            "months": 100
+                        },
+                        "rfmScenarios": [
+                            {
+                                "range":{
+                                    "lower": 1,
+                                    "higher": 100
+                                },
+                                "repeatReward": {
+                                    "type": "Every transaction",
+                                    "multiplier": 1
+                                },
+                                "reset": "None",
+                                "basicAward": {
+                                    "discount": {
+                                        "type": "Fixed amount",
+                                        "fixedAmount": 10,
+                                        "percentPurchaseAmount": 1
+                                    }
+                                },
+                                "message": {
+                                    "channel": "receipt",
+                                    "receipt": {
+                                        "option": "Same Receipt",
+                                        "message": [
+                                            {
+                                                "line": "Sample receipt heading",
+                                                "bold": true
+                                            },
+                                            {
+                                                "line": "Sample receipt body",
+                                                "bold": false
+                                            }
+                                        ]
+                                    },
+                                    "sms": ""
+                                }
+                            }
+                        ]
+                    }
+                },
+                "status": "Active"
+            }
+        }
+    },
+    "validContentTypeRequest": {
+        "uri": "/v1/campaigns",
+        "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "Basic T0NUZXN0aW5nOlByb3RlY3QkMQ==",
+            "From": "XLS-CAMPAIGN-API"
+        },
+        "expected": {
+            "status": 200,
+            "body": {
+                "campaignId": 1,
+                "campaignDescription": {
+                    "name": "XLS Amount Campaign 1",
+                    "type": "Amount",
+                    "subtype": "Discount",
+                    "image": "http://101.127.220.153:8882/img/campaigns/cpgn_0006.png",
+                    "merchantCampaignType": {
+                        "type": "Mono Merchant",
+                        "hostAndVirtualTerminal": false
+                    },
+                    "ownerType": "Merchant",
+                    "ownerId": 1
+                },
+                "campaignValidity": {
+                    "startDate": "20170328",
+                    "endDate": "20170425"
+                },
+                "campaignPrerequisite": {
+                    "purchaseAmount": {
+                        "min": 1,
+                        "max": 1000
+                    },
+                    "awardFrequency": "Every Visit"
+                },
+                "campaignDefinition": {
+                    "rfm": {
+                        "counterConfiguration": "No Override",
+                        "counterReset": {
+                            "type": "Reset x day(s) after 1st transaction date",
+                            "days": 10,
+                            "months": 100
+                        },
+                        "rfmScenarios": [
+                            {
+                                "range":{
+                                    "lower": 1,
+                                    "higher": 100
+                                },
+                                "repeatReward": {
+                                    "type": "Every transaction",
+                                    "multiplier": 1
+                                },
+                                "reset": "None",
+                                "basicAward": {
+                                    "discount": {
+                                        "type": "Fixed amount",
+                                        "fixedAmount": 10,
+                                        "percentPurchaseAmount": 1
+                                    }
+                                },
+                                "message": {
+                                    "channel": "receipt",
+                                    "receipt": {
+                                        "option": "Same Receipt",
+                                        "message": [
+                                            {
+                                                "line": "Sample receipt heading",
+                                                "bold": true
+                                            },
+                                            {
+                                                "line": "Sample receipt body",
+                                                "bold": false
+                                            }
+                                        ]
+                                    },
+                                    "sms": ""
+                                }
+                            }
+                        ]
+                    }
+                },
+                "status": "Active"
+            }
+        }
+    },
+    "invalidAcceptHeaderRequest": {
+        "uri": "/v1/campaigns",
+        "headers": {
+            "Accept": "test",
+            "From": "XLS-CAMPAIGN-API"
+        },
+        "expected": {
+            "status": 406
+        }
+    },
+    "invalidContentTypeRequest": {
+        "uri": "/v1/campaigns",
+        "headers": {
+            "Content-Type": "json",
+            "From": "XLS-CAMPAIGN-API"
+        },
+        "expected": {
+            "status": 415
+        }
+    },
+    "invalidURIRequest": {
+        "uri": "/v1/test/",
+        "pathParameter": "1",
+        "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "Basic T0NUZXN0aW5nOlByb3RlY3QkMQ==",
+            "From": "XLS-CAMPAIGN-API"
+        },
+        "expected": {
+            "status": 404
+        }
+    },
+    "emptyContentTypeRequest": {
+        "uri": "/v1/campaigns",
+        "headers": {
+		    "Authorization": "Basic T0NUZXN0aW5nOlByb3RlY3QkMQ==",
+            "From": "XLS-CAMPAIGN-API"
+		},
+        "expected": {
+            "status": 200,
+            "body": {
+                "campaignId": 1,
+                "campaignDescription": {
+                    "name": "XLS Amount Campaign 1",
+                    "type": "Amount",
+                    "subtype": "Discount",
+                    "image": "http://101.127.220.153:8882/img/campaigns/cpgn_0006.png",
+                    "merchantCampaignType": {
+                        "type": "Mono Merchant",
+                        "hostAndVirtualTerminal": false
+                    },
+                    "ownerType": "Merchant",
+                    "ownerId": 1
+                },
+                "campaignValidity": {
+                    "startDate": "20170328",
+                    "endDate": "20170425"
+                },
+                "campaignPrerequisite": {
+                    "purchaseAmount": {
+                        "min": 1,
+                        "max": 1000
+                    },
+                    "awardFrequency": "Every Visit"
+                },
+                "campaignDefinition": {
+                    "rfm": {
+                        "counterConfiguration": "No Override",
+                        "counterReset": {
+                            "type": "Reset x day(s) after 1st transaction date",
+                            "days": 10,
+                            "months": 100
+                        },
+                        "rfmScenarios": [
+                            {
+                                "range":{
+                                    "lower": 1,
+                                    "higher": 100
+                                },
+                                "repeatReward": {
+                                    "type": "Every transaction",
+                                    "multiplier": 1
+                                },
+                                "reset": "None",
+                                "basicAward": {
+                                    "discount": {
+                                        "type": "Fixed amount",
+                                        "fixedAmount": 10,
+                                        "percentPurchaseAmount": 1
+                                    }
+                                },
+                                "message": {
+                                    "channel": "receipt",
+                                    "receipt": {
+                                        "option": "Same Receipt",
+                                        "message": [
+                                            {
+                                                "line": "Sample receipt heading",
+                                                "bold": true
+                                            },
+                                            {
+                                                "line": "Sample receipt body",
+                                                "bold": false
+                                            }
+                                        ]
+                                    },
+                                    "sms": ""
+                                }
+                            }
+                        ]
+                    }
+                },
+                "status": "Active"
+            }
+        }
+    },
+    "emptyBodyRequest": {
+        "uri": "/v1/campaigns",
+        "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "Basic T0NUZXN0aW5nOlByb3RlY3QkMQ==",
+            "From": "XLS-CAMPAIGN-API"
+        },
+        "requestBody": {},
+        "expected": {
+            "status": 422
+        }
+    },
+    "invalidAuthorizationRequest": {
+        "uri": "/v1/campaigns",
+        "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "WrongAPIKey",
+            "From": "XLS-CAMPAIGN-API"
+        },
+        "expected": {
+            "status": 401
+        }
+    },
+    "invalidUserIdRequest": {
+        "uri": "/v1/campaigns",
+        "headers": {
+            "Content-Type": "application/json",
+            "Authorization": "Basic T0NUZXN0aW5nOlByb3RlY3QkMQ=="
+        },
+        "expected": {
+            "status": 400
+        }
+    }
+}

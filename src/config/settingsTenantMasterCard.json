@@ -1,0 +1,17 @@
+{
+  "tenantConfig": {
+    "tenantCode": "MasterCard",
+    "isDeleteAllowedToNonMonoMerchant": "true",
+    "isWeekStartDayOnMonday": "true",
+    "maxLimitForRollUpPeriods": {
+      "maxLimitInDaysForPerHour": "1",
+      "maxLimitInDaysForPerDay": "2",
+      "maxLimitInMonthsForPerWeek": "3",
+      "maxLimitInMonthsForPerMonth": "6",
+      "maxLimitInYearsForPerQuarter": "1",
+      "maxLimitInYearsForPerSemester": "3",
+      "maxLimitInYearsForPerYear": "3",
+      "maxLimitInYearsForCumulative": "3"
+    }
+  }
+}

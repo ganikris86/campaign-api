@@ -1,0 +1,12 @@
+{
+    "counterOverrideType": "No Override",
+    "counterResetDetails": {
+        "counterResetType": "Reset x day(s) after each transaction date",
+        "noOfDaysFromTransactionDateToResetCounter": 10,
+        "noOfMonthsFromTransactionDateToResetCounter": 100
+    },
+    "isMultipleScenarioTriggerAllowed": false,
+    "isAwardTriggeredAgainAfterCounterReset": false,
+    "isCascadedAwardTriggered": true,
+    "amountDriverScenariosAndBenefitsDetails": []
+}

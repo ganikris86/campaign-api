@@ -1,0 +1,16 @@
+{
+	"basicScenarioDetails": {
+        "eventDays": [
+            "0101",
+            "3112"
+        ],
+        "benefitDetails": {
+            "benefitTriggerFrequencyType": "Every transaction",
+            "discountBenefitDetails": {
+                "discountType": "Fixed amount",
+                "discountFixedAmount": 5
+            }
+        },
+        "scenarioMessageDetails": {}
+    }
+}

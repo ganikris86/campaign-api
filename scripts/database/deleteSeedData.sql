@@ -1,0 +1,69 @@
+whenever sqlerror exit 1;
+
+prompt 'Delete from table OE_TERM_MERCH_CPG'...
+DELETE FROM OE_TERM_MERCH_CPG;
+
+prompt 'Delete from table OE_CPG_PRE_REQ'...
+DELETE FROM OE_CPG_PRE_REQ;
+
+prompt 'Delete from table OE_CPG_AWD_DEF'...
+DELETE FROM OE_CPG_AWD_DEF;
+
+prompt 'Delete from table OE_CPG_SCENARIO'...
+DELETE FROM OE_CPG_SCENARIO;
+
+prompt 'Delete from table OE_CPG'...
+DELETE FROM OE_CPG;
+
+prompt 'Delete from table TERM_CAMPAIGN_COUNT'...
+DELETE FROM TERM_CAMPAIGN_COUNT;
+
+prompt 'Delete from table LOOP_CAMPAIGN'...
+DELETE FROM LOOP_CAMPAIGN;
+
+prompt 'Truncate table ENTITY_AWD_CAPPING_COUNTER'...
+TRUNCATE TABLE ENTITY_AWD_CAPPING_COUNTER;
+
+prompt 'Truncate table SCENARIO_MESSAGES'...
+TRUNCATE TABLE SCENARIO_MESSAGES;
+
+prompt 'Delete from table SCENARIO'...
+DELETE FROM SCENARIO;
+
+prompt 'Delete from table CAMPAIGN'...
+DELETE FROM CAMPAIGN;
+
+prompt 'Delete from table CONNECTION_PARAM'...
+DELETE FROM CONNECTION_PARAM;
+
+prompt 'Delete from table TERM_BIN_GATEWAY_COUNT'...
+DELETE FROM TERM_BIN_GATEWAY_COUNT;
+
+prompt 'Delete from table TERM_NETWORK_COUNT'...
+DELETE FROM TERM_NETWORK_COUNT;
+
+prompt 'Delete from table TERM_OFFER_COUNT'...
+DELETE FROM TERM_OFFER_COUNT;
+
+prompt 'Delete from table TERM_POOL_COUNT'...
+DELETE FROM TERM_POOL_COUNT;
+
+prompt 'Delete from table TERMINAL'...
+DELETE FROM TERMINAL;
+
+prompt 'Delete from table CONTACT_PERSON'...
+DELETE FROM CONTACT_PERSON;
+
+prompt 'Delete from table MERCHANT'...
+DELETE FROM MERCHANT;
+
+prompt 'Delete from table CORPORATE'...
+DELETE FROM CORPORATE;
+
+prompt 'Delete from table OE_CPG_PAYBRAND_RANGE'...
+DELETE FROM OE_CPG_PAYBRAND_RANGE;
+
+COMMIT;
+
+quit;
+/

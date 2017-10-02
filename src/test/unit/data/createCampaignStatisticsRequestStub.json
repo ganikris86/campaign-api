@@ -1,0 +1,10 @@
+{
+    "rollUpPeriodType": "Per Week",
+    "period": {
+        "startDate": "20170328",
+        "endDate": "20170428"
+    },
+    "merchantId": 21,
+    "campaignId": 92,
+    "isMerchantCampaign": false
+}

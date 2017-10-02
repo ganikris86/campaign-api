@@ -1,0 +1,17 @@
+[
+    {
+        "scenarioNumber": 1,
+        "purchaseAmountSlab": {
+            "lower": 1,
+            "upper": 100
+        },
+        "counterResetType": "None",
+        "benefitDetails": {
+            "benefitTriggerFrequencyType": "Every transaction",
+            "discountBenefitDetails": {}
+        },
+        "scenarioMessageDetails": {
+            "messageChannelType": []
+        }
+    }
+]

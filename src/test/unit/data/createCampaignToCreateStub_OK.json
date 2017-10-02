@@ -1,0 +1,95 @@
+{
+      "name": "ITRI AmountDisc11",
+      "startDate": "20170601",
+      "endDate": "20181231",
+      "minimumPurchaseAmount": 1,
+      "maximumPurchaseAmount": 500000,
+      "ownerType": "Merchant",
+      "ownerId": 12,
+      "triggerFrequencyType": "Once per day",
+      "shortDescription": "This is short Description",
+      "driverType": "Amount",
+      "benefitType": "Discount",
+      "isSubscribableToServeralMerchants": false,
+      "isSubscribableToHostAndVirtualTerminals": false,
+      "imageUrl": "TODO",
+      "mobileMessage": "This is mobile message",
+      "status": "Active",
+      "driverAndBenefitsDetails": {
+        "amountDriverAndBenefitsDetails": {
+          "counterOverrideType": "No override",
+          "counterResetDetails": {
+            "counterResetType": "Reset x day(s) after 1st transaction date",
+            "noOfDaysFromTransactionDateToResetCounter": 10,
+            "noOfMonthsFromTransactionDateToResetCounter": 0
+          },
+          "isMultipleScenarioTriggerAllowed": false,
+          "isAwardTriggeredAgainAfterCounterReset": false,
+          "amountDriverScenariosAndBenefitsDetails": [
+            {
+              "scenarioNumber": 1,
+              "purchaseAmountSlab": {
+                "lower": 1,
+                "upper": 10000
+              },
+              "counterResetType": "None",
+              "benefitDetails": {
+                "benefitTriggerFrequencyType": "Every transaction",
+                  "discountBenefitDetails": {
+                      "discountType": "Fixed amount",
+                      "discountFixedAmount": 10
+                  }
+              },
+              "scenarioMessageDetails": {
+                "messageChannelType": ["Receipt"],
+                "receiptMessageDetails": {
+                  "receiptPrintingType": "Same receipt as payment",
+                  "receiptMessages": [
+                    {
+                      "lineNumber": 1,
+                      "message": "Sample receipt heading",
+                      "isMessagePrintedInBold": true
+                    },
+                    {
+                      "lineNumber": 2,
+                      "message": "Sample receipt body",
+                      "isMessagePrintedInBold": false
+                    },
+                    {
+                      "lineNumber": 3,
+                      "message": "",
+                      "isMessagePrintedInBold": false
+                    },
+                    {
+                      "lineNumber": 4,
+                      "message": "",
+                      "isMessagePrintedInBold": false
+                    },
+                    {
+                      "lineNumber": 5,
+                      "message": "",
+                      "isMessagePrintedInBold": false
+                    },
+                    {
+                      "lineNumber": 6,
+                      "message": "",
+                      "isMessagePrintedInBold": false
+                    },
+                    {
+                      "lineNumber": 7,
+                      "message": "",
+                      "isMessagePrintedInBold": false
+                    },
+                    {
+                      "lineNumber": 8,
+                      "message": "",
+                      "isMessagePrintedInBold": false
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+}

@@ -1,0 +1,64 @@
+{
+    "port": 8001,
+    "dbConfig": {
+        "host": "192.168.77.106",
+        "port": "1521",
+        "user": "xls_admin",
+        "password": "F+CcEchl4GIs6Y8v/v0sBA==",
+        "database": "X761CI1",
+        "poolMin": 10,
+        "poolMax": 20,
+        "retryCount": 5,
+        "retryInterval": 500
+    },
+    "loggerConfig": {
+        "appenders": {
+            "console": { "type": "console" },
+            "dateFile": {
+                "type": "dateFile",
+                "filename": "logs/xls_campaign_api_common.log",
+                "pattern": "-yyyy-MM-dd",
+                "alwaysIncludePattern": false
+            }
+        },
+        "categories": {
+            "XLS_CAMPAIGN_API": { "appenders": ["dateFile"], "level": "ALL" },
+            "default": { "appenders": ["console"], "level": "ALL" }
+        },
+        "printLineNumber": true
+    },
+    "middleware": {
+        "appsec": {
+            "module": {
+                "arguments": [
+                    {
+                        "csrf": false
+                    }
+                ]
+            }
+        },
+        "router": {
+            "module": {
+                "arguments": [
+                    {
+                        "directory": "path:./controllers"
+                    }
+                ]
+            }
+        },
+        "fileNotFound": {
+            "enabled": true,
+            "priority": 130,
+            "module": {
+                "name": "path:./middlewares/404"
+            }
+        },
+        "serverError": {
+            "enabled": true,
+            "priority": 140,
+            "module": {
+                "name": "path:./middlewares/500"
+            }
+        }
+    }
+}

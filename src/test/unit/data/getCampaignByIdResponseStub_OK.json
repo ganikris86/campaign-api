@@ -1,0 +1,92 @@
+{
+    "campaignId": 1,
+    "name": "XLS Amount Campaign Spr7",
+    "startDate": "20170329",
+    "endDate": "20170425",
+    "minimumPurchaseAmount": 1,
+    "maximumPurchaseAmount": 1000,
+    "ownerType": "Merchant",
+    "ownerId": 1,
+    "triggerFrequencyType": "Every Visit",
+    "shortDescription": "",
+    "driverType": "Amount",
+    "benefitType": "Discount",
+    "isSubscribableToServeralMerchants": false,
+    "isSubscribableToHostAndVirtualTerminals": false,
+    "imageUrl": "TODO",
+    "mobileMessage": "",
+    "status": "Active",
+    "driverAndBenefitsDetails": {
+        "amountDriverAndBenefitsDetails": {
+            "counterOverrideType": "No Override",
+            "counterResetDetails": {
+                "counterResetType": "Reset x day(s) after each transaction date",
+                "noOfDaysFromTransactionDateToResetCounter": 10,
+                "noOfMonthsFromTransactionDateToResetCounter": 100
+            },
+            "isMultipleScenarioTriggerAllowed": "TODO",
+            "isAwardTriggeredAgainAfterCounterReset": "TODO",
+            "amountDriverScenariosAndBenefitsDetails": [
+                {
+                    "scenarioNumber": 1,
+                    "purchaseAmountSlab": {
+                        "lower": 1,
+                        "upper": 100
+                    },
+                    "counterResetType": "None",
+                    "benefitDetails": {},
+                    "scenarioMessageDetails": {
+                        "messageChannelType": "Receipt",
+                        "receiptMessageDetails": {
+                            "receiptPrintingType": "TODO:receiptPrintingType",
+                            "receiptMessages": [
+                                {
+                                    "lineNumber": 1,
+                                    "message": "Sample receipt heading",
+                                    "isMessagePrintedInBold": true
+                                },
+                                {
+                                    "lineNumber": 2,
+                                    "message": "Sample receipt body",
+                                    "isMessagePrintedInBold": false
+                                },
+                                {
+                                    "lineNumber": 3,
+                                    "message": "",
+                                    "isMessagePrintedInBold": false
+                                },
+                                {
+                                    "lineNumber": 4,
+                                    "message": "",
+                                    "isMessagePrintedInBold": false
+                                },
+                                {
+                                    "lineNumber": 5,
+                                    "message": "",
+                                    "isMessagePrintedInBold": false
+                                },
+                                {
+                                    "lineNumber": 6,
+                                    "message": "",
+                                    "isMessagePrintedInBold": false
+                                },
+                                {
+                                    "lineNumber": 7,
+                                    "message": "",
+                                    "isMessagePrintedInBold": false
+                                },
+                                {
+                                    "lineNumber": 8,
+                                    "message": "",
+                                    "isMessagePrintedInBold": false
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "lastUpdatedBy": "LHSSU",
+    "lastUpdatedDateTime": "2017-03-29T03:19:26.000Z"
+}

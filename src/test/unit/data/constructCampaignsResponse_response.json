@@ -1,0 +1,29 @@
+[
+        {
+            "campaignId": 128,
+            "name": "XLS Amount Campaign Spr6",
+            "startDate": "20170329",
+            "endDate": "20170329",
+            "minimumPurchaseAmount": 1,
+            "maximumPurchaseAmount": 1000,
+            "ownerType": "Merchant",
+            "ownerId": 1,
+            "triggerFrequencyType": "Every transaction",
+            "shortDescription": "",
+            "driverType": "Amount",
+            "benefitType": "Discount",
+            "isSubscribableToServeralMerchants": false,
+            "isSubscribableToHostAndVirtualTerminals": false,
+            "imageUrl": "Batman.jpg",
+            "mobileMessage": "",
+            "status": "Active",
+            "driverAndBenefitsDetails": {},
+            "lastUpdatedBy": 1,
+            "lastUpdatedDateTime": "2017-03-29T03:19:19.000Z"
+        }
+    ]
+
+
+
+
+

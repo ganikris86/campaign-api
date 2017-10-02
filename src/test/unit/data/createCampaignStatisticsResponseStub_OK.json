@@ -1,0 +1,122 @@
+{
+    "rollUpPeriodType": "Per Week",
+    "period": {
+        "startDate": "20170328",
+        "endDate": "20170428"
+    },
+    "merchantId": 21,
+    "statistics": [
+        {
+            "rollUpSlice": "2017-W13",
+            "campaignId": 92,
+            "ownerType": "Program manager",
+            "numberOfTransactions": 12,
+            "numberOfCustomerTransacted": 1,
+            "totalPurchaseAmount": 2578.87,
+            "averagePurchaseAmount": 214.91,
+            "minimumPurchaseAmount": 10,
+            "maximumPurchaseAmount": 1099.9,
+            "numberOfAwards": {
+                "discounts": 0,
+                "pools": {
+                    "amount": 0,
+                    "quantity": 120
+                },
+                "coupons": 0
+            },
+            "numberOfRefundedTransactions": 17,
+            "totalRefundedPurchaseAmount": 4990.7,
+            "numberOfCancelledAwards": {
+                "pools": {
+                    "amount": 0,
+                    "quantity": 160
+                },
+                "coupons": 0
+            }
+        },
+        {
+            "rollUpSlice": "2017-W14",
+            "campaignId": 92,
+            "ownerType": "Program manager",
+            "numberOfTransactions": 2,
+            "numberOfCustomerTransacted": 1,
+            "totalPurchaseAmount": 2199.8,
+            "averagePurchaseAmount": 1099.9,
+            "minimumPurchaseAmount": 1099.9,
+            "maximumPurchaseAmount": 1099.9,
+            "numberOfAwards": {
+                "discounts": 0,
+                "pools": {
+                    "amount": 0,
+                    "quantity": 20
+                },
+                "coupons": 0
+            },
+            "numberOfRefundedTransactions": 12,
+            "totalRefundedPurchaseAmount": 12838.8,
+            "numberOfCancelledAwards": {
+                "pools": {
+                    "amount": 0,
+                    "quantity": 120
+                },
+                "coupons": 0
+            }
+        },
+        {
+            "rollUpSlice": "2017-W16",
+            "campaignId": 92,
+            "ownerType": "Program manager",
+            "numberOfTransactions": 2,
+            "numberOfCustomerTransacted": 1,
+            "totalPurchaseAmount": 2159.8,
+            "averagePurchaseAmount": 1079.9,
+            "minimumPurchaseAmount": 1069.9,
+            "maximumPurchaseAmount": 1089.9,
+            "numberOfAwards": {
+                "discounts": 0,
+                "pools": {
+                    "amount": 0,
+                    "quantity": 20
+                },
+                "coupons": 0
+            },
+            "numberOfRefundedTransactions": 2,
+            "totalRefundedPurchaseAmount": 2099.8,
+            "numberOfCancelledAwards": {
+                "pools": {
+                    "amount": 0,
+                    "quantity": 20
+                },
+                "coupons": 0
+            }
+        },
+        {
+            "rollUpSlice": "2017-W17",
+            "campaignId": 92,
+            "ownerType": "Program manager",
+            "numberOfTransactions": 5,
+            "numberOfCustomerTransacted": 1,
+            "totalPurchaseAmount": 4584.85,
+            "averagePurchaseAmount": 916.97,
+            "minimumPurchaseAmount": 880.99,
+            "maximumPurchaseAmount": 1000.99,
+            "numberOfAwards": {
+                "discounts": 0,
+                "pools": {
+                    "amount": 0,
+                    "quantity": 50
+                },
+                "coupons": 0
+            },
+            "numberOfRefundedTransactions": 6,
+            "totalRefundedPurchaseAmount": 5346.49,
+            "numberOfCancelledAwards": {
+                "pools": {
+                    "amount": 0,
+                    "quantity": 60
+                },
+                "coupons": 0
+            }
+        }
+    ]
+}

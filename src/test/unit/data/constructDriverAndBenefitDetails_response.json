@@ -1,0 +1,77 @@
+{
+    "counterOverrideType": "No Override",
+    "counterResetDetails": {
+        "counterResetType": "Reset x day(s) after each transaction date",
+        "noOfDaysFromTransactionDateToResetCounter": 10,
+        "noOfMonthsFromTransactionDateToResetCounter": 100
+    },
+    "isMultipleScenarioTriggerAllowed": "TODO",
+    "isAwardTriggeredAgainAfterCounterReset": false,
+    "isCascadedAwardTriggered": true,
+    "amountDriverScenariosAndBenefitsDetails": [
+        {
+            "scenarioNumber": 1,
+            "purchaseAmountSlab": {
+                "lower": 1,
+                "upper": 100
+            },
+            "counterResetType": "None",
+            "benefitDetails": {
+                "benefitTriggerFrequencyType": "Every transaction",
+                "discountBenefitDetails": {
+                    "discountType": "Fixed amount",
+                    "discountFixedAmount": 10
+                }
+            },
+            "scenarioMessageDetails": {
+                "messageChannelType": "TODO:channel",
+                "receiptMessageDetails": {
+                    "receiptPrintingType": "TODO:receiptPrintingType",
+                    "receiptMessages": [
+                        {
+                            "lineNumber": 1,
+                            "message": "Sample receipt heading",
+                            "isMessagePrintedInBold": true
+                        },
+                        {
+                            "lineNumber": 2,
+                            "message": "Sample receipt body",
+                            "isMessagePrintedInBold": false
+                        },
+                        {
+                            "lineNumber": 3,
+                            "message": "",
+                            "isMessagePrintedInBold": false
+                        },
+                        {
+                            "lineNumber": 4,
+                            "message": "",
+                            "isMessagePrintedInBold": false
+                        },
+                        {
+                            "lineNumber": 5,
+                            "message": "",
+                            "isMessagePrintedInBold": false
+                        },
+                        {
+                            "lineNumber": 6,
+                            "message": "",
+                            "isMessagePrintedInBold": false
+                        },
+                        {
+                            "lineNumber": 7,
+                            "message": "",
+                            "isMessagePrintedInBold": false
+                        },
+                        {
+                            "lineNumber": 8,
+                            "message": "",
+                            "isMessagePrintedInBold": false
+                        }
+                    ]
+                },
+                "smsMessage": "TODO:sms"
+            }
+        }
+    ]
+}
